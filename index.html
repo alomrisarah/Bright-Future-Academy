@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bright Future Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/home.css" />
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <!-- Brand Link -->
+            <a class="navbar-brand" href="index.html#about">Bright Future Academy</a>
+
+            <!-- Navbar Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Home Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <!-- Library Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="library.html">Library</a>
+                    </li>
+                    <!-- Login Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <!-- Join Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Join Us</a>
+                    </li>
+                    <!-- Dropdown for Sections -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="sectionsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Sections</a>
+                        <ul class="dropdown-menu" aria-labelledby="sectionsDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#about"><i class="bi bi-info-circle"></i> About</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#what-we-offer"><i class="bi bi-flag"></i> What We
+                                    Offer</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#services"><i class="bi bi-tools"></i> Services</a>
+                                <!-- Updated -->
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#our-events"><i class="bi bi-calendar"></i> Our
+                                    Events</a>
+                                <!-- Updated -->
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#our-courses"><i class="bi bi-book"></i> Courses</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#Course-Categories"><i class="bi bi-grid"></i> Course
+                                    Categories</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#popular-courses"><i class="bi bi-star"></i> Popular
+                                    Courses</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#Instructors"><i class="bi bi-person-lines-fill"></i>
+                                    Teachers</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#feedback"><i class="bi bi-chat-left-dots"></i>
+                                    Feedbacks</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#contact"><i class="bi bi-envelope"></i> Contact</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="profile-section split d-none d-lg-flex align-items-center">
+                <a href="stu-dashbord.html" class="profile-link" id="profileLink">
+                    <img src="assets/images/team-3.jpg" alt="Profile" class="profile-img" />
+                    <span class="username">Mohammad</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section id="about" class="about-section text-center mb-3">
+        <h1>Welcome to Bright Future Academy</h1>
+        <p class="text-center p-5">Our mission is to provide quality education and create a positive environment for
+            learning. Welcome to our school website! We are committed to providing the best education and creating a
+            nurturing environment for our students. Explore our website to learn more about our programs, staff, and
+            upcoming events.</p>
+        <!-- About Section -->
+        <div class="container mt-3">
+            <!-- About Section Header -->
+            <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <img src="assets/images/carousel-2.jpg" class="d-block w-100" alt="About Image 1" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-white">Welcome to Bright Future Academy</h1>
+                            <p class="text-white">A place where your future begins.</p>
+                            <a href="registration.html" class="btn btn-light me-2">Join us</a>
+                            <a href="#services" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <img src="assets/images/carousel-1.jpg" class="d-block w-100" alt="About Image 2" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-white">Innovative Learning Experience</h1>
+                            <p class="text-white">Join us and shape your future today.</p>
+                            <a href="registration.html" class="btn btn-light me-2">Join Us</a>
+                            <a href="#services" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- What We Offer Section -->
+    <section id="what-we-offer" class="container section py-5">
+        <h2 class="text-center mb-4">What We Offer</h2>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                <!-- Skilled Instructors -->
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="bi bi-person-check blue"></i>
+                            <h5 class="card-title mt-3">Skilled Instructors</h5>
+                            <p class="card-text">Our instructors are experienced and passionate, providing expert
+                                guidance to help you succeed in your courses.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Online Classes -->
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="bi bi-laptop blue"></i>
+                            <h5 class="card-title mt-3">Online Classes</h5>
+                            <p class="card-text">We offer flexible and interactive online classes that allow you to
+                                learn at your own pace from anywhere.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Home Projects -->
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="bi bi-house-door blue"></i>
+                            <h5 class="card-title mt-3">Home Projects</h5>
+                            <p class="card-text">Apply your learning with practical home projects that enhance your
+                                skills and experience in real-world scenarios.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Library -->
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="bi bi-book blue"></i>
+                            <h5 class="card-title mt-3">Book Library</h5>
+                            <p class="card-text">Access a wide variety of books and resources to support your learning
+                                and enhance your knowledge in various fields.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="services-section section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                <!-- Card 1: Personalized Tutoring -->
+                <div class="col d-flex">
+                    <div class="card shadow-sm w-100">
+                        <img src="assets/images/tutor.jpg" class="card-img-top" alt="Personalized Tutoring" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Personalized Tutoring</h5>
+                            <p class="card-text">We offer personalized tutoring sessions to help students excel in their
+                                academics, tailored to each student's needs.</p>
+                            <a href="registration.html" class="btn btn-primary mt-auto">Join Us</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2: After-School Programs -->
+                <div class="col d-flex">
+                    <div class="card shadow-sm w-100">
+                        <img src="assets/images/after.jpg" class="card-img-top" alt="After-School Programs" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">After-School Programs</h5>
+                            <p class="card-text">Our afterschool programs serve all ages and focus on areas including
+                                academic support, arts, sports and recreation, and workforce development.</p>
+                            <a href="registration.html" class="btn btn-primary mt-auto">Join Us</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3: Counseling Services -->
+                <div class="col d-flex">
+                    <div class="card shadow-sm w-100">
+                        <img src="assets/images/guidance.jpg" class="card-img-top" alt="Counseling Services" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Counseling & Guidance</h5>
+                            <p class="card-text">Our professional counselors are here to support students’ emotional and
+                                social development, ensuring a balanced life.</p>
+                            <a href="registration.html" class="btn btn-primary mt-auto">Join Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="our-cources" class="section text-center mb-3">
+        <h2 class="text-center mb-5">Our Courses</h2>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                <div class="col d-flex">
+                    <div class="card shadow-sm w-100">
+                        <img src="assets/images/course-1.jpg" class="card-img-top" alt="Web Design Course" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Web Design</h5>
+                            <p class="card-text">Learn the fundamentals of web design with our comprehensive course,
+                                covering everything from HTML to CSS and layout design.</p>
+                            <a href="login.html" class="btn btn-primary mt-auto">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2: Development Course -->
+                <div class="col d-flex">
+                    <div class="card shadow-sm w-100">
+                        <img src="assets/images/course-2.jpg" class="card-img-top" alt="Development Course" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Development</h5>
+                            <p class="card-text">Our development course covers both front-end and back-end programming,
+                                helping you become a full-stack developer.</p>
+                            <a href="login.html" class="btn btn-primary mt-auto">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3: Graphic Design Course -->
+                <div class="col d-flex">
+                    <div class="card shadow-sm w-100">
+                        <img src="assets/images/course-3.jpg" class="card-img-top" alt="Graphic Design Course" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Graphic Design</h5>
+                            <p class="card-text">Master the principles of design and learn how to create stunning
+                                graphics for both web and print media.</p>
+                            <a href="login.html" class="btn btn-primary mt-auto">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Course-Categories -->
+    <section id="Course-Categories" class="py-5 section">
+        <div class="container">
+            <h2 class="text-center mb-5">Course Categories</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                <!-- Web Design -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="assets/images/web.jpg" alt="Web Design" class="card-img-top course-img" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Web Design</h5>
+                            <p class="card-text">49 Courses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="assets/images/download.jpeg" alt="Graphic Design" class="card-img-top course-img" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Graphic Design</h5>
+                            <p class="card-text">49 Courses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Editing -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="assets/images/course-1.jpg" alt="Video Editing" class="card-img-top course-img" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Video Editing</h5>
+                            <p class="card-text">49 Courses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Online Marketing -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="assets/images/download(2).jpeg" alt="Online Marketing"
+                            class="card-img-top course-img" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Online Marketing</h5>
+                            <p class="card-text">49 Courses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular Courses -->
+    <section id="popular-courses" class="py-5 section">
+        <div class="container">
+            <h2 class="text-center mb-5">Popular Courses</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/images/web.jpg" alt="Course 1" class="card-img-top course-img" />
+                        <div class="card-body d-flex flex-column align-content-center">
+                            <h5 class="card-title">Web Design & Development Course for Beginners</h5>
+                            <p class="card-text">$149.00</p>
+                            <span class="text-warning">⭐⭐⭐⭐⭐</span>
+                            <p class="mt-3">
+                                <strong>Ahmad Ali</strong> | <strong>1.49 Hrs</strong> |
+                                <strong>30 Students</strong>
+                            </p>
+                            <a href="login.html" class="btn btn-primary mt-auto">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/images/download.jpeg" alt="Course 2" class="card-img-top course-img" />
+                        <div class="card-body d-flex flex-column align-content-center">
+                            <h5 class="card-title">Graphic Design Fundamentals</h5>
+                            <p class="card-text">$120.00</p>
+                            <span class="text-warning">⭐⭐⭐⭐</span>
+                            <p class="mt-3">
+                                <strong>Sarah Khan</strong> | <strong>2.10 Hrs</strong> |
+                                <strong>50 Students</strong>
+                            </p>
+                            <a href="login.html" class="btn btn-primary mt-auto">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/images/download(2).jpeg" alt="Course 3" class="card-img-top course-img" />
+                        <div class="card-body d-flex flex-column align-content-center">
+                            <h5 class="card-title">Digital Marketing Mastery</h5>
+                            <p class="card-text">$199.00</p>
+                            <span class="text-warning">⭐⭐⭐⭐⭐</span>
+                            <p class="mt-3">
+                                <strong>John Doe</strong> | <strong>3.00 Hrs</strong> |
+                                <strong>75 Students</strong>
+                            </p>
+                            <a href="login.html" class="btn btn-primary mt-auto">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- events -->
+    <section id="our-events" class="py-5 section">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Events</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                <!-- School Science Fair Card -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 event-card">
+                        <img src="assets/images/event-01.jpg" alt="School Science Fair"
+                            class="card-img-top event-img" />
+                        <div class="card-body">
+                            <h5 class="card-title">School Science Fair</h5>
+                            <p class="card-text">Date: December 10, 2024</p>
+                            <p>Join us for an exciting day filled with innovative projects from our students. Explore a
+                                variety of science exhibits and experiments!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#joinEventModal"
+                                data-event="School Science Fair" data-date="December 10, 2024">Join Event</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Annual Sports Day Card -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 event-card">
+                        <img src="assets/images/event2.jpg" alt="Annual Sports Day" class="card-img-top event-img" />
+                        <div class="card-body">
+                            <h5 class="card-title">Annual Sports Day</h5>
+                            <p class="card-text">Date: December 5, 2024</p>
+                            <p>Get ready for a fun-filled day of athletic competitions and activities. Cheer for your
+                                favorite teams and celebrate school spirit!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#joinEventModal"
+                                data-event="Annual Sports Day" data-date="December 5, 2024">Join Event</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Holiday Art Show Card -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 event-card">
+                        <img src="assets/images/event-03.jpg" alt="Holiday Art Show" class="card-img-top event-img" />
+                        <div class="card-body">
+                            <h5 class="card-title">Holiday Art Show</h5>
+                            <p class="card-text">Date: December 15, 2024</p>
+                            <p>Our talented students will showcase their artistic creations at this year's
+                                holiday-themed art show. Don’t miss this event!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#joinEventModal"
+                                data-event="Holiday Art Show" data-date="December 15, 2024">Join Event</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Joining Event -->
+    <div class="modal fade" id="joinEventModal" tabindex="-1" aria-labelledby="joinEventModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="joinEventModalLabel">Join Event</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="joinEventForm">
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="userName" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="userEmail" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="userEmail" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="userPhone" class="form-label">Your Phone Number</label>
+                            <input type="text" class="form-control" id="userPhone" required />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- teachers -->
+    <section id="Instructors" class="py-5 bg-light section">
+        <div class="container">
+            <h2 class="text-center mb-5">Expert Instructors</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                <!-- Instructor 1 -->
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/images/team-1.jpg" alt="Instructor 1" class="card-img-top" />
+                        <div class="card-body text-center">
+                            <div>
+                                <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <p class="m-0">Kareem Mahmoud</p>
+                            <small class="text-muted">Lead Instructor </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor 2 -->
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/images/team-2.jpg" alt="Instructor 2" class="card-img-top" />
+                        <div class="card-body text-center">
+                            <div>
+                                <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <p class="m-0">Sahar Ahmad</p>
+                            <small class="text-muted">Course Coordinator </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor 3 -->
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/images/team-3.jpg" alt="Instructor 3" class="card-img-top" />
+                        <div class="card-body text-center">
+                            <div>
+                                <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <p class="m-0">Yasser Assad</p>
+                            <small class="text-muted">Professor of Graphic Design </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor 4 -->
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/images/team-4.jpg" alt="Instructor 4" class="card-img-top" />
+                        <div class="card-body text-center">
+                            <div>
+                                <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <p class="m-0">Haddel Sami</p>
+                            <small class="text-muted">Senior Web Developer</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feedback Section -->
+    <section id="feedback" class="py-5 bg-light section">
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Our Students Say!</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                <!-- Testimonial Card 1 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 feedback-card">
+                        <div class="card-body">
+                            <p class="card-text">"The teachers are fantastic, and the learning environment is amazing.
+                                I've learned so much here!"</p>
+                            <div class="card-footer text-center">
+                                <h5 class="card-title text-center">- Ahmad Kareem Mohammed</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 feedback-card">
+                        <div class="card-body">
+                            <p class="card-text">"Bright Future Academy has truly changed my perspective on education.
+                                It's fun and engaging!"</p>
+                            <div class="card-footer text-center">
+                                <h5 class="card-title text-center">- Fatima Al Zahrani</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 feedback-card">
+                        <div class="card-body">
+                            <p class="card-text">"I love the extracurricular activities and the support from all the
+                                teachers. Highly recommend this school!"</p>
+                            <div class="card-footer text-center">
+                                <h5 class="card-title text-center">- Ali Hassan</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 4 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 feedback-card">
+                        <div class="card-body">
+                            <p class="card-text">"The extracurricular activities are amazing. I have grown so much here,
+                                both academically and personally."</p>
+                            <div class="card-footer text-center">
+                                <h5 class="card-title text-center">- Layla Ahmed</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 5 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 feedback-card">
+                        <div class="card-body">
+                            <p class="card-text">"Bright Future Academy has truly lived up to its name. I can't thank
+                                the teachers enough for their support."</p>
+                            <div class="card-footer text-center">
+                                <h5 class="card-title text-center">- Mohammed Al-Mansoori</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial Card 6 -->
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 feedback-card">
+                        <div class="card-body">
+                            <p class="card-text">"I love the extracurricular activities and the support from all the
+                                teachers. Highly recommend this school!"</p>
+                            <div class="card-footer text-center">
+                                <h5 class="card-title text-center">- Ali Hassan</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial Card 7 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 feedback-card">
+                        <div class="card-body">
+                            <p class="card-text">"The curriculum is well structured, and the learning environment is
+                                very conducive to academic success!"</p>
+                            <div class="card-footer text-center">
+                                <h5 class="card-title text-center">- Sarah Ahmed</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial Card 8 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 feedback-card">
+                        <div class="card-body">
+                            <p class="card-text">"A wonderful place for me to grow academically and personally. The
+                                staff is always helpful and caring."</p>
+                            <div class="card-footer text-center">
+                                <h5 class="card-title text-center">- James Lee</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-5 bg-light section">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-12 col-md-6 mb-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <!-- Contact Info -->
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h4>Contact Information</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fas fa-phone-alt me-2"></i>
+                            <strong>Phone:</strong> +123 456 7890
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope me-2"></i>
+                            <strong>Email:</strong> info@example.com
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            <strong>Address:</strong>123 Street, New York, USA
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5" id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Quick Links Section -->
+                <div class="col-md-6">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#our-courses" class="text-white text-decoration-none">Our Courses</a></li>
+                        <li><a href="login.html" class="text-white text-decoration-none">Login</a></li>
+                        <li><a href="library.html" class="text-white text-decoration-none">Our Library</a></li>
+                        <li><a href="registration.html" class="text-white text-decoration-none">Be a part of our
+                                family</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="col-md-6">
+                    <h5 class="mb-4">Contact</h5>
+                    <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i>123 Street, New York, USA</p>
+                    <p class="mb-1"><i class="fas fa-phone-alt me-2"></i><a href="tel:+01234567890"
+                            class="text-white text-decoration-none">+012 345 67890</a></p>
+                    <p class="mb-3"><i class="fas fa-envelope me-2"></i><a href="mailto:info@example.com"
+                            class="text-white text-decoration-none">info@example.com</a></p>
+                    <div>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-white mt-4 mb-0">&copy; 2024 Bright Future Academy. All rights reserved.</p>
+            <!-- Footer Content -->
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn">Scroll to Bottom</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

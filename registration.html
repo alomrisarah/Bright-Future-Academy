@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/home.css" />
+    </head>
+
+    <style>
+        .container {
+            max-width: 900px;
+        }
+
+        .navbar {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul li {
+            text-align: left;
+        }
+
+        h2 {
+            color: #333;
+            font-family: "Arial", sans-serif;
+            text-align: center;
+        }
+
+        .form-control,
+        .form-select {
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .student-form,
+        .teacher-form {
+            display: none;
+        }
+    </style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#about">Bright Future Academy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="library.html">Our Library</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">School Registration</h1>
+        <h2 class="text-center mb-4">Bright Future Academy</h2>
+        <p class="text-center">
+            <strong>Additional documents for registration:</strong><br />
+            Bring this registration form and the following documentation to the school office:
+        </p>
+        <ul class="text-center">
+            <li><span class="bullet-circle"></span> Original Certified Birth Certificate</li>
+            <li><span class="bullet-circle"></span> Original Social Security Card</li>
+            <li><span class="bullet-circle"></span> Current Immunization Form</li>
+            <li><span class="bullet-circle"></span> Current Proofs of Residence (e.g., power, water, or gas bill)</li>
+        </ul>
+
+        <form class="bg-light p-4 rounded shadow" id="registrationForm">
+            <!-- Select Role -->
+            <div class="mb-3">
+                <label for="role" class="form-label">Select Role</label>
+                <select class="form-select" id="role" required onchange="toggleForm()">
+                    <option value="">Select Role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                </select>
+            </div>
+
+            <!-- General Information (Shared Fields) -->
+            <div class="mb-3 row">
+                <div class="col-md-4">
+                    <label for="first-name" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="first-name" placeholder="First Name" required />
+                </div>
+                <div class="col-md-4">
+                    <label for="middle-name" class="form-label">Middle Name</label>
+                    <input type="text" class="form-control" id="middle-name" placeholder="Middle Name" />
+                </div>
+                <div class="col-md-4">
+                    <label for="last-name" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" placeholder="Last Name" required />
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="gender" class="form-label">Gender</label>
+                <select class="form-select" id="gender" required>
+                    <option value="">Please Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="ethnicity" class="form-label">Ethnicity</label>
+                <select class="form-select" id="ethnicity" required>
+                    <option value="">Please Select</option>
+                    <option value="hispanic">Hispanic</option>
+                    <option value="non-hispanic">Non-Hispanic</option>
+                    <option value="american">American</option>
+                    <option value="canadian">Canadian</option>
+                    <option value="british">British</option>
+                    <option value="french">French</option>
+                    <option value="german">German</option>
+                    <option value="italian">Italian</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="indian">Indian</option>
+                    <option value="nigerian">Nigerian</option>
+                    <option value="brazilian">Brazilian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="russian">Russian</option>
+                    <option value="australian">Australian</option>
+                    <option value="south-african">South African</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Email Address" required />
+            </div>
+
+            <!-- Student Form (Visible when Role is selected as Student) -->
+            <div id="student-form" class="student-form">
+                <div class="mb-3">
+                    <label for="student-id" class="form-label">Student ID</label>
+                    <input type="text" class="form-control" id="student-id" placeholder="Enter Student ID" required />
+                </div>
+                <div class="mb-3">
+                    <label for="grade" class="form-label">Grade</label>
+                    <input type="text" class="form-control" id="grade" placeholder="Enter Grade" required />
+                </div>
+                <div class="mb-3">
+                    <label for="classes" class="form-label">Select Class</label>
+                    <select class="form-select" id="classes" required>
+                        <option value="">Select Class</option>
+                        <option value="class-1">Class 1</option>
+                        <option value="class-2">Class 2</option>
+                        <option value="class-3">Class 3</option>
+                        <option value="class-4">Class 4</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Teacher Form (Visible when Role is selected as Teacher) -->
+            <div id="teacher-form" class="teacher-form">
+                <div class="mb-3">
+                    <label for="teacher-id" class="form-label">Teacher ID</label>
+                    <input type="text" class="form-control" id="teacher-id" placeholder="Enter Teacher ID" required />
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Teaching Subject</label>
+                    <select class="form-select" id="subject" required>
+                        <option value="">Select Subject</option>
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="english">English</option>
+                        <option value="history">History</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit Registration</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-5" id="footer">
+        <p class="text-center text-white mt-4 mb-0">&copy; 2024 Bright Future Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to toggle form sections based on selected role
+        function toggleForm() {
+            const role = document.getElementById("role").value;
+            const studentForm = document.getElementById("student-form");
+            const teacherForm = document.getElementById("teacher-form");
+
+            if (role === "student") {
+                studentForm.style.display = "block";
+                teacherForm.style.display = "none";
+            } else if (role === "teacher") {
+                studentForm.style.display = "none";
+                teacherForm.style.display = "block";
+            } else {
+                studentForm.style.display = "none";
+                teacherForm.style.display = "none";
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
