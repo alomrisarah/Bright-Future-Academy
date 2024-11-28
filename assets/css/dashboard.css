@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --bs-primary: #06BBCC;
+    --bs-llight: #f8f9fa;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-dark: #181d38;
+    --bs-light: #F0FBFC;
+    --bs-danger: #dc3545;
+    --black: #000000;
+    --gray-dark: #333333;
+    --gray-light: #666;
+    --blue: #007bff;
+    --blue-light: #0056b3;
+    --boro: #ddd;
+    --bs-font: "Nunito", sans-serif;
+}
+
+body {
+    font-family: var(--bs-font);
+    background-color: var(--bs-light);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+.table th,
+.table td {
+    text-align: center;
+}
+/*nav**/
+.navbar {
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--bs-white);
+    font-family: var(--bs-font);
+    text-transform: uppercase;
+    flex-grow: 1;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--bs-white) !important;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: var(--bs-font);
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--bs-primary) !important;
+}
+
+.navbar-toggler {
+    border: none;
+    color: var(--bs-white);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.split {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    color: var(--bs-white);
+    font-size: 14px;
+    font-family: var(--bs-font);
+}
+
+.profile-section a {
+    text-decoration: none;
+    color: var(--bs-white);
+}
+
+.profile-section a:hover {
+    color: var(--bs-primary);
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        margin-left: auto;
+    }
+}
+
+/**/
+.ms-sm-auto {
+    margin: auto !important;
+    /*its built in feture to remove override */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 10px;
+    }
+
+
+}
+
+/*sections css and responsive part*/
+.section {
+    padding: 50px 20px;
+    margin: 30px auto;
+    background-color: var(--bs-light);
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Section Titles */
+.section h1,
+.section h2 {
+    color: var(--bs-dark);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section h5 {
+    color: var(--bs-dark);
+    font-size: 18px;
+    font-family: var(--bs-font);
+    margin-bottom: 10px;
+}
+
+.section p {
+    color: var(--bs-gray);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: var(--bs-font);
+}
+
+@media (max-width: 1024px) {
+    .section {
+        padding: 40px 15px;
+        margin: 20px auto;
+    }
+
+    .section h1 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 30px 10px;
+        margin: 15px auto;
+    }
+
+    .section h1 {
+        font-size: 1.75rem;
+    }
+
+    .section p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 20px 5px;
+        margin: 10px auto;
+    }
+
+    .section h1 {
+        font-size: 1.5rem;
+    }
+
+    .section p {
+        font-size: 0.85rem;
+    }
+}
+
+.section h1,
+.section h2,
+.section p {
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+@media (min-width: 1200px) {
+    .section {
+        padding: 60px 30px;
+    }
+
+    .section h1 {
+        font-size: 3rem;
+    }
+
+    .section p {
+        font-size: 1.2rem;
+    }
+}
+
+/**********************************/

@@ -1,0 +1,21 @@
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.form-control,
+.form-select {
+    border-radius: 0.5rem;
+}
+
+.btn-primary {
+    border-radius: 1rem;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+#paymentSuccess {
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 1rem;
+}
