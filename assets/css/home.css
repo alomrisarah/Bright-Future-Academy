@@ -51,26 +51,21 @@ a:hover {
     transition: background-color 0.3s;
 }
 
-/**/
+
 /* About Section */
 .about-section {
     padding: 0;
-    height: 100vh;
     position: relative;
+    text-align: center;
 }
 
+/* Carousel Styling */
 #aboutCarousel {
-    height: 100%;
-}
-
-#aboutCarousel .carousel-item img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
-#aboutCarousel .carousel-item {
-    position: relative;
+    width: 70%;
+    max-height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 #aboutCarousel .carousel-item::before {
@@ -83,102 +78,24 @@ a:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
-.carousel-caption h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--bs-white);
+#aboutCarousel .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#aboutCarousel .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     z-index: 2;
-}
-
-.carousel-caption p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    z-index: 2;
-}
-
-.carousel-caption .btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    z-index: 2;
-}
-
-/* Light Button */
-.carousel-caption .btn-light {
-    background-color: var(--bs-white);
-    color: var(--black);
-    border: 2px solid var(--bs-white);
-    cursor: pointer;
-}
-
-.carousel-caption .btn-primary {
-    background-color: var(--bs-primary);
-    color: var(--bs-white);
-    border: 2px solid var(--bs-primary);
-    cursor: pointer;
-}
-
-
-@media (max-width: 1024px) {
-    #aboutCarousel .carousel-caption h1 {
-        font-size: 2.5rem;
-    }
-
-    #aboutCarousel .carousel-caption p {
-        font-size: 1.1rem;
-    }
-
-    #aboutCarousel .carousel-caption .btn {
-        font-size: 0.95rem;
-        padding: 8px 18px;
-    }
 }
 
 @media (max-width: 768px) {
-    .about-section {
-        height: auto;
-        padding: 50px 20px;
-    }
-
     #aboutCarousel {
         display: none;
-    }
-
-    .about-section h1 {
-        font-size: 2rem;
-    }
-
-    .about-section p {
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
-
-    .about-section .btn {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
-
-    .about-section .container {
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-section {
-        padding: 30px 15px;
-    }
-
-    .about-section h1 {
-        font-size: 1.75rem;
-    }
-
-    .about-section p {
-        font-size: 0.95rem;
-    }
-
-    .about-section .btn {
-        font-size: 0.9rem;
-        padding: 8px 16px;
     }
 }
 
@@ -188,6 +105,7 @@ header {
     padding: 3rem 1rem;
     height: 20%;
 }
+
 .event-img {
     object-fit: cover;
     height: 200px;
@@ -446,6 +364,7 @@ footer {
     padding: 0;
     margin: 0;
 }
+
 /* Buttons for Links */
 .section-buttons a {
     background-color: var(--bs-primary);
